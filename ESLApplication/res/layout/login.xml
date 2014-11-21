@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bg3"
+    android:id="@+id/layMain">
+
+    <LinearLayout android:id="@+id/layTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layButton"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/codeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter UserName"
+            android:text=""
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <EditText
+            android:id="@+id/pwdTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:hint="Enter Password"
+            android:text=""
+            android:inputType="textPassword"
+            android:padding="10dp"
+         android:layout_marginLeft="20dp"
+          
+             />
+</LinearLayout>
+        <LinearLayout android:id="@+id/layButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" 
+            android:weightSum="2">
+
+            <Button
+                android:text="Cancel"
+                android:layout_margin="10dp"
+                android:id="@+id/cancelBtn"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/okBtn"
+                android:text="    OK    "
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+   
+    
+      <Button
+                android:id="@+id/btnSignUp"
+                android:text="SignUp"
+                android:layout_below="@+id/layButton"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+</RelativeLayout>

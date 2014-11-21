@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/bg2">
+    <LinearLayout 
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:id="@+id/config_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configuration"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17sp"
+            android:layout_marginBottom="15dp"
+            />
+        <CheckedTextView 
+            android:id="@+id/popup_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="Notification Vibrate"
+            />
+        <CheckedTextView 
+            android:id="@+id/sound_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:text="Notification Sound"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

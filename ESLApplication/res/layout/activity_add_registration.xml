@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+      android:background="@drawable/bg2">
+
+    <LinearLayout
+        android:id="@+id/addr_body_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/addr_footer"
+        android:layout_margin="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/addr_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:text="Registration"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/addr_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="NENHUM CPF/CNPJ REGISTRADOS PARA ESTE DISPOSITIVO"
+            android:textSize="14sp" />
+
+        <ListView
+            android:id="@+id/addr_list_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/addr_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/addr_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="   Add  " 
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:id="@+id/addr_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Delete" 
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

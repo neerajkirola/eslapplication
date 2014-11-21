@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/bg2" 
+     >
+    
+    
+    <ScrollView android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        
+        <LinearLayout android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/layMain">
+
+  <TableLayout android:id="@+id/layTop" 
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp">
+      
+      
+      <TableRow android:layout_height="wrap_content"
+          android:layout_width="fill_parent">
+          
+          
+          <TextView android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="UserName"
+              android:layout_marginRight="10dp"/>
+          
+          <EditText android:id="@+id/txtUserName"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+              android:hint="UserName          "
+              />
+          
+          
+          
+      </TableRow>
+      
+      
+       <TableRow android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:layout_marginTop="20dp" >
+          
+          
+          <TextView android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="Password"/>
+          
+          <EditText android:id="@+id/txtPassword"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:hint="Password"
+              android:inputType="textPassword"/>
+          
+          
+          
+      </TableRow>
+      
+        <TableRow android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:layout_marginTop="20dp" >
+          
+          
+          <TextView android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="Re-enter Password"/>
+          
+          <EditText android:id="@+id/txtRePassword"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:hint="Re-enter password"
+              android:inputType="textPassword"/>
+          
+          
+          
+      </TableRow>
+      
+       
+        <TableRow android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:layout_marginTop="20dp"
+          >
+          
+          
+          <TextView android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="Email"/>
+          
+          <EditText android:id="@+id/txtEmail"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:hint="Email"
+              android:inputType="textEmailAddress"/>
+          
+          
+          
+      </TableRow>
+      
+        
+         <TableRow android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+              android:layout_marginTop="20dp"
+              >
+          
+          
+          <TextView android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="Phone"/>
+          
+          <EditText android:id="@+id/txtPhone"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:hint="Phone"
+              android:inputType="number"/>
+          
+          
+          
+      </TableRow>
+      
+         
+          <TableRow android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+              android:layout_marginTop="20dp"
+              android:visibility="invisible"
+              >
+          
+          
+          <TextView android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="UDID"/>
+          
+          <EditText android:id="@+id/txtUdid"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:hint="UDID"/>
+          
+          
+          
+      </TableRow>
+      
+      
+      
+      
+  </TableLayout>
+  
+ 
+  <Button android:id="@+id/btnDone"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:text="SignUp"
+      
+     android:layout_gravity="center_horizontal"
+      android:layout_marginTop="20dp"/>
+  
+  </LinearLayout>
+ </ScrollView>
+</RelativeLayout>

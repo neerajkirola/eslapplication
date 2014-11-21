@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >    
+    <integer name="maxValue">3</integer>    
+    <integer name="SPLASHTIME">2500</integer>
+    <integer name="STOPSPLASH">0</integer>
+</resources>
